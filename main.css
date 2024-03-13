@@ -1,0 +1,122 @@
+.hero {
+  background-image: url("https://img.freepik.com/fotos-gratis/um-delicioso-bolo-de-aniversario-com-baloes_23-2151010637.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+  padding-left: 64px;
+  position: relative;
+}
+
+.hero .container {
+  position: relative;
+}
+
+.hero:before {
+  content: "";
+  opacity: .7;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero__text {
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 56px;
+}
+
+.hero__logo {
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (width <= 640px) {
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero__logo {
+    height: 35px;
+  }
+
+  .hero__text {
+    margin: 24px 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.infos-bar {
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 16px 24px;
+  display: flex;
+}
+
+.infos-bar__infos {
+  gap: 40px;
+  display: flex;
+}
+
+.infos-bar__infos__item {
+  color: #000;
+  font-size: 14px;
+}
+
+.infos-bar__infos__item b {
+  color: #000;
+  font-size: 18px;
+  display: block;
+}
+
+@media (width <= 640px) {
+  .infos-bar, .infos-bar__infos {
+    display: block;
+  }
+
+  .infos-bar__infos__item {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width1024px) {
+  .infos-bar__infos {
+    gap: 16px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (width <= 640px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (width <= 1024px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
